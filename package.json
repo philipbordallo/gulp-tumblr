@@ -1,0 +1,22 @@
+{
+  "name": "gulp-tumblr",
+  "version": "1.0.0",
+  "description": "Better tumblr theming with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulpplugin",
+    "tumblr"
+  ],
+  "author": "Philip Bordallo",
+  "license": "MIT",
+  "dependencies": {
+    "readable-stream": "^2.0.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0"
+  }
+}

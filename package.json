@@ -1,6 +1,6 @@
 {
   "name": "gulp-tumblr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Better tumblr theming with gulp",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   ],
   "author": "Philip Bordallo",
   "license": "MIT",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/philipbordallo/gulp-tumblr.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philipbordallo/gulp-tumblr.git"
   },
   "bugs": {
-    "url" :"https://github.com/philipbordallo/gulp-tumblr/issues"
+    "url": "https://github.com/philipbordallo/gulp-tumblr/issues"
   },
   "dependencies": {
     "readable-stream": "^2.0.5"

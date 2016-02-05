@@ -1,6 +1,6 @@
 {
   "name": "gulp-tumblr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Better tumblr theming with gulp",
   "main": "index.js",
   "scripts": {

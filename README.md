@@ -25,7 +25,7 @@ gulp.src(['./template.html'])
 ## Requirements
 
 * A JSON file (`options.dataFile`) that has the variable data of what to show.
-	
+
 	Example: _data.json_
 
 	```json
@@ -69,21 +69,25 @@ gulp.src(['./template.html'])
 		<h1>{Title}</h1>
 		<h2>{Description}</h2>
 
-		{block:Quote}{/block:Quote}
-		{block:Text}{/block:Text}
+		{block:Posts}
+			{block:Quote}{/block:Quote}
+			{block:Text}{/block:Text}
+		{/block:Posts}
 	</body>
 	</html>
 
 	```
 
 * A directory (`options.postFolder`) with individual templates for each post type.
-	
+
 	Example: _post/text.html_
 
 	```html
 	<!-- block:Text -->
+		{block:Text}
 		{block:Title}{Title}{/block:Title}
 		{Body}
+		{/block:Text}
 	<!-- /block:Text -->
 	```
 
@@ -91,6 +95,7 @@ gulp.src(['./template.html'])
 
 	```html
 	<!-- block:Quote -->
+		{block:Quote}
 		<article>
 			<blockquote class="{Length}">
 				{Quote}
@@ -98,6 +103,7 @@ gulp.src(['./template.html'])
 
 		</article>
 		{block:Source}<div class="source">{Source}</div>{/block:Source}
+		{/block:Quote}
 	<!-- /block:Quote -->
 
 	```
